@@ -1,0 +1,13 @@
+CREATE TABLE JokeDb (
+    id INTEGER NOT NULL,
+    setup TEXT NOT NULL,
+    punchline TEXT NOT NULL,
+    type TEXT NOT NULL
+);
+
+getAllJokes:
+SELECT * FROM JokeDb;
+
+insertJoke:
+INSERT INTO JokeDb (id, setup, punchline, type)
+VALUES ?;
